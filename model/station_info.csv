@@ -89,7 +89,7 @@ BDHY,Budhi ,2
 KTHU,Kathua ,2 
 MDPB,Madhopur Punjab ,2 
 SJNP,Sujanpur ,3 
-PTK,Pathankot Junction ,4 
+PTK,Pathankot Junction ,5 
 CHKB,Chakki Bank ,3 
 MRTL,Mirthal ,2 
 MEX,Mukerian ,3 
@@ -98,7 +98,6 @@ TDO,Tanda Urmar ,3
 BPRS,Bhogpur Sirwal ,2 
 JUC,Jalandhar City Junction ,5 
 KXH,Kapurthala ,2 
-SQR/Sultanpur Lodi
 LNK,Lohian Khas Junction ,3 
 MXH,Makhu ,2 
 MWX,Mallanwala Khas ,2 
@@ -108,7 +107,6 @@ KKP,Kot Kapura Junction ,3
 GJUT,Gangsar Jaitu ,3 
 BTI,Bathinda Junction ,7 
 MBY,Mandi Dabwali ,2 
-SGRA/Sangaria
 HMH,Hanumangarh Junction ,4 
 PGK,PiliBanga ,2 
 SOG,Suratgarh Junction ,5 
@@ -132,3 +130,566 @@ ABR,Abu Road ,3
 PNU,Palanpur Junction ,5 
 SID,Siddhpur ,2 
 UJA,Unjha ,2 
+MSH,Mahesana Junction ,6 
+SBC,KSR Bengaluru City Junction ,Bangalore) 
+HUP,Hindupur ,4 
+DMM,Dharmavaram Junction ,5 
+ATP,Anantapur ,2 
+GY,Gooty Junction ,2 
+GTL,Guntakal Junction ,6 
+AD,Adoni ,4 
+MALM,Mantralayam Road ,3 
+RC,Raichur Junction ,3 
+WADI,Wadi Junction ,4 
+GR,Gulbarga ,4 
+SUR,Solapur ,5 
+DD,Daund Junction ,7 
+ANG,Ahmadnagar ,2 
+BAP,Belapur ,2 
+KPG,Kopargaon ,2 
+MMR,Manmad Junction ,6 
+JL,Jalgaon Junction ,4 
+AN,Amalner ,2 
+NDB,Nandurbar ,3 
+AKV,Ankleshwar Junction ,4 
+UDZ,Udaipur City ,4 
+JYM,Jai Samand Road ,1 
+DNRP,Dungarpur ,1 
+SDGM,Sardargram ,1 
+MCA,Mecheda ,6 
+PKU,Panskura Junction ,6 
+KGP,Kharagpur Junction ,10 
+TATA,Tatanagar Junction ,5 
+CKP,Chakradharpur ,3 
+ROU,Rourkela Junction ,5 
+GP,Rajgangpur ,3 
+BMB,Bamra ,3 
+JSG,Jharsuguda Junction ,5 
+BRJN,Brajrajnagar ,3 
+BPH,Belpahar ,2 
+RIG,Raigarh ,3 
+KHS,Kharsia ,3 
+BUA,Baradwar ,3 
+CPH,Champa Junction ,3 
+NIA,Janjgir Naila ,4 
+AKT,Akaltara ,4 
+BSP,Bilaspur Junction ,8 
+BYT,Bhatapara ,4 
+TLD,Tilda ,3 
+R,Raipur Junction ,7 
+BPHB,Bhilai Power House ,3 
+DURG,Durg Junction ,6 
+RJN,Raj Nandgaon ,3 
+DGG,Dongargarh ,4 
+AGN,Amgaon ,3 
+G,Gondia Junction ,7 
+TRO,Tirora ,3 
+TMR,Tumsar Road Junction ,5 
+BRD,Bhandara Road ,3 
+KP,Kamptee ,3 
+AJNI,Ajni ,Nagpur) 
+WR,Wardha Junction ,4 
+PLO,Pulgaon Junction ,3 
+DMN,Dhamangaon ,2 
+CND,Chandur ,2 
+BD,Badnera Junction ,Amravati) 
+MZR,Murtizapur Junction ,4 
+AK,Akola Junction ,7 
+SEG,Shegaon ,2 
+JM,Jalamb Junction ,3 
+NN,Nandura ,2 
+MKU,Malkapur ,2 
+BSL,Bhusaval Junction ,8 
+DXG,Dharangaon ,2 
+DDE,Dondaicha ,2 
+NWU,Navapur ,3 
+VYA,Vyara ,2 
+MID,Madhi ,3 
+BIY,Bardoli ,1 
+UDN,Udhna Junction ,Surat) 
+MAN,Maninagar ,2 
+PURI,Puri ,8 
+SIL,Sakhi Gopal ,4 
+KUR,Khurda Road Junction ,7 
+KAPG,Kalupara Ghat ,3 
+BALU,Balugaon ,4 
+KIT,Khallikot ,3 
+CAP,Chatrapur ,3 
+BAM,Brahmapur ,4 
+PSA,Palasa ,3 
+CHE,Srikakulam Road ,4 
+VZM,Vizianagaram Junction ,5 
+VBL,Bobbili Junction ,2 
+RGDA,Rayagada ,3 
+KSNG,Kesinga ,1 
+TIG,Titlagarh Junction ,3 
+KBJ,Kantabanji ,2 
+KRAR,Khariar Road ,2 
+MSMD,Mahasamund ,2 
+BBS,Bhubaneswar ,6 
+DNKL,Dhenkanal ,2 
+TLHR,Talcher ,3 
+ANGL,Angul ,3 
+BONA,Boinda ,2 
+RAIR,Rairakhol ,2 
+SBPD,Sambalpur Road ,3 
+SBP,Sambalpur Junction ,3 
+HKG,Hirakud ,3 
+BRGA,Bargarh Road ,3 
+BLGR,Bolangir ,3 
+MTJ,Mathura Junction ,10 
+MRT,Mathura Cantt. ,2 
+HTC,Hathras City ,2 
+HTJ,Hathras Road ,1 
+KSJ,Kasganj Junction ,6 
+UJH,Ujhani ,1 
+BEM,Budaun ,2 
+BRY,Bareilly MG ,2 
+BC,Bareilly City ,3 
+IZN,Izzatnagar ,3 
+BPR,Bhojipura Junction ,3 
+PBE,Pilibhit Junction ,4 
+PP,Puranpur ,1 
+MLN,Mailani Junction ,3 
+GK,Gola Gokaranath ,3 
+LMP,Lakhimpur ,1 
+HA,Hargaon ,1 
+STP,Sitapur ,3 
+SD,Sidhauli ,1 
+DAL,DaliGanj ,3 
+LC,Lucknow City ,3 
+ASH,Aishbagh ,5 
+JP,Jaipur Junction ,6 
+KKU,Kanakpura ,2 
+JOB,Asalpur Jobner ,3 
+FL,Phulera Junction ,5 
+NRI,Naraina ,3 
+TL,Tiloniya ,2 
+KSG,Kishangarh ,3 
+MD,Madar Junction ,2 
+AII,Ajmer Junction ,5 
+TK,Tumakuru ,Tumkur) 
+TTR,Tiptur ,4 
+ASK,Arsikere Junction ,3 
+RRB,Birur Junction ,3 
+DVG,Davangere ,2 
+HRR,Harihar ,3 
+RNR,Ranibennur ,3 
+HVR,Haveri ,3 
+UBL,Hubballi Junction ,Hubli) 
+DWR,Dharwad ,4 
+LD,Londa Junction ,3 
+BGM,Belagavi ,Belgaum) 
+KRD,Karad ,3 
+SOH,Sirohi Road ,2 
+SOD,Sojat Road ,2 
+BER,Beawar ,2 
+BCT,Mumbai Central ,9 
+DDR,Dadar Western ,7 
+BVI,Borivali ,9 
+CHP,Chhapi ,2 
+JWB,Jawai Bandh ,2 
+RANI,Rani ,2 
+BDTS,Bandra Terminus ,7 
+RTM,Ratlam Junction ,7 
+NMH,Nimach ,3 
+COR,Chittaurgarh Junction ,5 
+BHL,Bhilwara ,3 
+MVJ,Mavli Junction ,5 
+RPZ,Ranapratapnagar ,2 
+MDL,Mandal ,1 
+GBP,Gulabpura ,1 
+BJNR,Bijainagar ,2 
+NSD,Nasirabad ,2 
+NLI,Namli ,2 
+JAO,Jaora ,2 
+DOD,Dhodhar ,2 
+MDS,Mandsor ,2 
+PIP,Piplia ,2 
+MLG,Malhargarh ,2 
+NBH,Nimbahera ,1 
+CNA,Chanderiya ,2 
+GGR,Gangrar ,1 
+HMG,Hamirgarh ,2 
+SSR,Sareri ,1 
+SDAH,Sealdah ,20 
+MDP,Madhupur Junction ,4 
+JSME,Jasidih Junction ,5 
+JAJ,Jhajha ,4 
+KIUL,Kiul Junction ,5 
+MKA,Mokama ,4 
+PNC,Patna Saheb ,3 
+PNBE,Patna Junction ,10 
+MGS,Mughal Sarai Junction ,8 
+BSB,Varanasi Junction ,9 
+SLN,Sultanpur Junction ,3 
+LKO,Lucknow Charbagh NR ,9 
+BE,Bareilly Junction ,4 
+MB,Moradabad Junction ,7 
+NBD,Najibabad Junction ,3 
+SRE,Saharanpur Junction ,6 
+UMB,Ambala Cantt. Junction ,7 
+LDH,Ludhiana Junction ,7 
+BEAS,Beas Junction ,2 
+ASR,Amritsar Junction ,6 
+RMU,Rampur Junction ,3 
+AMRO,Amroha ,3 
+HPU,Hapur Junction ,5 
+GZB,Ghaziabad Junction ,6 
+DLI,Old Delhi Junction ,16 
+DEE,Delhi Sarai Rohilla ,5 
+DEC,Delhi Cantt. ,5 
+PM,Palam ,3 
+GGN,Gurgaon ,3 
+GHH,Garhi Harsaru Junction ,3 
+PTRD,Pataudi Road ,3 
+RE,Rewari Junction ,8 
+KRH,Khairthal ,2 
+AWR,Alwar Junction ,2 
+MKH,Malakhera ,1 
+RHG,Rajgarh ,2 
+BKI,Bandikui Junction ,6 
+DO,Dausa ,2 
+GADJ,Jaipur Gandhinagar ,2 
+VG,Viramgam Junction ,5 
+DHG,Dhrangadhra Junction ,3 
+HVD,Halvad ,1 
+SIOB,Samakhiali Junction ,3 
+BCOB,Bhachau ,3 
+GIMB,Gandhidham Junction ,3 
+AI,Adipur Junction ,2 
+AJE,Anjar ,1 
+BHUJ,Bhuj ,3 
+BLDI,Bhildi Junction ,3 
+DHN,Dhanbad Junction ,8 
+CRP,Chandrapura Junction ,3 
+BKSC,Bokaro Steel City ,3 
+PNW,Pundag ,3 
+JAA,Jhalida ,3 
+MURI,Muri Junction ,3 
+RNC,Ranchi Junction ,6 
+HTE,Hatia ,3 
+BANO,Bano ,2 
+BNDM,Bondamunda ,2 
+RGL,Rengali ,2 
+BRPL,Barpali ,2 
+BUDM,Badmal ,2 
+RPRD,Rupra Road ,2 
+AMB,Ambodala ,2 
+SPRD,Singapur Road ,2 
+PVP,Parvatipuram ,3 
+KTV,Kottavalasa Junction ,5 
+SCM,Simhachalam ,2 
+VSKP,Visakhapatnam Junction ,8 
+DVD,Duvvada ,4 
+AKP,Anakapalle ,3 
+YLM,Elamanchili ,2 
+NRP,Narsipatnam Road ,2 
+TUNI,Tuni ,2 
+ANV,Annavaram ,3 
+GLP,Gollaprolu ,3 
+PAP,Pithapuram ,2 
+SLO,Samalkot Junction ,3 
+APT,Anaparti ,3 
+DWP,Dwarapudi ,3 
+RJY,Rajahmundry ,5 
+GVN,Godavari ,2 
+KVR,Kovvur ,3 
+NDD,Nidadavolu Junction ,3 
+TDD,Tadepalligudem ,3 
+EE,Eluru ,3 
+NDO,Nidubrolu ,3 
+BPP,Bapatla ,3 
+CJM,Chinnaganjam ,3 
+SKM,Singarayakonda ,2 
+KVZ,Kavali ,4 
+BTTR,Bitragunta ,3 
+NYP,Nayadupeta ,3 
+SPE,Sullurupeta ,3 
+TRL,Tiruvallur ,6 
+AJJ,Arakkonam Junction ,8 
+VN,Vaniyambadi ,3 
+TPT,Tirupattur ,2 
+PTJ,Podanur Junction ,4 
+PNQ,Thrissur Punkunnam ,2 
+DINR,Divine Nagar ,2 
+IPL,Idappally ,2 
+TUVR,Turavur ,2 
+SURI,Siuri ,3 
+SNT,Sainthia Junction ,4 
+RPH,Rampurhat ,3 
+PKR,Pakur ,2 
+MLDT,Malda Town ,7 
+BOE,Barsoi Junction ,2 
+KNE,KishanGanj ,3 
+NJP,New Jalpaiguri Junction ,8 
+SGUJ,Siliguri Junction ,6 
+NMZ,New Mal Junction ,3 
+BNV,Binnaguri ,3 
+HSA,Hasimara ,3 
+APDJ,Alipur Duar Junction ,3 
+AGC,Agra Cantt. ,6 
+TDL,Tundla Junction ,5 
+CNB,Kanpur Central ,10 
+FTP,Fatehpur ,3 
+SFG,SubedarGanj ,3 
+ALD,Allahabad Junction ,10 
+HW,Haridwar ,9 
+LRJ,Laksar Junction ,4 
+SPN,Shahjahanpur ,5 
+HRI,Hardoi ,5 
+RBL,Rae Bareli Junction ,4 
+GNG,GauriGanj ,2 
+AME,Amethi ,2 
+PBH,Pratapgarh Junction ,3 
+PRG,Prayag Junction ,3 
+LTT,Lokmanya Tilak Terminus ,5 
+TNA,Thane ,10 
+IGP,Igatpuri ,4 
+NK,Nasik Road ,4 
+BAU,Burhanpur ,2 
+KNW,Khandwa Junction ,5 
+HD,Harda ,3 
+TBN,Timarni ,3 
+HBJ,Bhopal HabibGanj ,5 
+BINA,Bina Junction ,6 
+LAR,Lalitpur Junction ,3 
+JHS,Jhansi Junction ,8 
+MRPR,Mau Ranipur ,2 
+HPP,Harpalpur ,2 
+MBA,Mahoba Junction ,3 
+BNDA,Banda ,2 
+ATE,Atarra ,2 
+CKTD,Chitrakutdham Karwi ,3 
+MKP,Manikpur Junction ,4 
+BLS,Balasore ,4 
+BHC,Bhadrak ,4 
+JJKR,Jajpur Keonjhar Road ,4 
+CTC,Cuttack Junction ,5 
+GNT,Guntur Junction ,7 
+NRT,Narasaraopet ,3 
+VKN,Vinukonda ,2 
+KCD,Kurichedu ,1 
+DKD,Donakonda ,3 
+MRK,Markapur Road ,2 
+TLU,Tarlupadu ,1 
+CBM,Cumbum ,1 
+GID,Giddalur ,2 
+NDL,Nandyal Junction ,3 
+BMH,Betamcherla ,2 
+PDL,Pendekallu Junction ,2 
+MKR,Maddikera ,2 
+BAY,Ballari Junction ,Bellary) 
+HPT,Hosapete Junction ,Hospet) 
+GDG,Gadag Junction ,3 
+CLR,Castle Rock ,3 
+QLM,Kulem ,3 
+SVM,Kudchade ,1 
+MAO,Madgaon Junction ,3 
+VSG,Vasco-da-Gama ,3 
+TNGL,Toranagallu Junction ,3 
+MRB,Munirabad ,1 
+KBL,Koppal ,1 
+NGR,Annigeri ,2 
+SVHE,Sisvinhalli ,1 
+KGB,Kargi Road ,3 
+BIG,Belgahna ,3 
+PND,Pendra Road ,3 
+APR,Anuppur Junction ,4 
+AAL,Amlai ,3 
+BUH,Burhar ,3 
+SDL,Shahdol ,3 
+BRS,Birsinghpur ,3 
+UMR,Umaria ,3 
+KTE,Katni Junction ,6 
+SHR,Sihora Road ,2 
+JBP,Jabalpur Junction ,6 
+MML,Madan Mahal ,3 
+SRID,Shridham ,3 
+NU,Narsinghpur ,2 
+KY,Kareli ,2 
+GAR,Gadarwara ,2 
+BKH,Bankhedi ,2 
+PPI,Pipariya ,3 
+SGP,Sohagpur ,2 
+HBD,Hoshangabad ,2 
+GKP,Gorakhpur Junction ,10 
+KLD,Khalilabad ,3 
+BST,Basti ,5 
+GD,Gonda Junction ,3 
+RK,Roorkee ,3 
+JUD,Yamunanagar-Jagadhri ,3 
+JRC,Jalandhar Cantt. Junction ,3 
+GHY,Guwahati ,7 
+KYQ,Kamakhya Junction ,4 
+RNY,Rangiya Junction ,5 
+NBQ,New Bongaigaon Junction ,4 
+NOQ,New Alipurduar ,3 
+NCB,New Cooch Behar ,5 
+DQG,Dhupguri ,2 
+KIR,Katihar Junction ,7 
+CRR,Karhagola Road ,3 
+NNA,Naugachia ,3 
+KGG,Khagaria Junction ,3 
+BGS,Begusarai ,3 
+BJU,Barauni Junction ,9 
+SPJ,Samastipur Junction ,7 
+MFP,Muzaffarpur Junction ,6 
+CAA,Chakia ,2 
+MKI,Motihari ,2 
+SGL,Sagauli Junction ,2 
+BTH,Bettiah ,3 
+NKE,Narkatiaganj Junction ,4 
+BUG,Bagaha ,2 
+SBZ,Siswa Bazar ,1 
+CPJ,Kaptanganj Junction ,2 
+VAK,Varkala Sivagiri ,3 
+KPY,Karunagappalli ,2 
+MVLK,Mavelikara ,3 
+CNGR,Chengannur ,3 
+TRVL,Tiruvalla ,4 
+CGY,Changanassery ,3 
+KTYM,Kottayam ,3 
+PGTN,Palakkad Town ,Palghat) 
+SRP,Shrirampur ,Serampore) 
+SHE,Seoraphuli Junction ,6 
+CGR,Chandan Nagar ,3 
+CNS,Chuchura ,3 
+BDC,Bandel Junction ,7 
+KAN,Khana Junction ,5 
+MNAE,Mankar ,4 
+OYR,Waria ,4 
+STN,Sitarampur Junction ,5 
+RNPR,Rupnarayanpur ,3 
+CRJ,Chittaranjan ,3 
+JMT,Jamtara ,2 
+VDS,Vidyasagar ,2 
+MUW,Mathurapur ,2 
+STL,Simultala ,2 
+GHR,Gidhaur ,2 
+JMU,Jamui ,2 
+MNP,Mananpur ,2 
+LKR,Luckeesarai Junction ,2 
+BRYA,Barhiya ,3 
+HTZ,Hathidah Junction ,2 
+BARH,Barh ,3 
+BKP,Bakhtiyarpur Junction ,5 
+FUT,Fatuha Junction ,7 
+DNR,Danapur ,5 
+BTA,Bihta ,2 
+ARA,Ara Junction ,3 
+BEA,Bihiya ,3 
+BYN,Banahi ,2 
+RPR,Raghunathpur ,4 
+TWG,Twining Ganj ,2 
+DURE,Dumraon ,3 
+BXR,Buxar ,3 
+CSA,Chausa ,2 
+GMR,Gahmar ,2 
+BWH,Bhadaura ,3 
+DLN,Dildarnagar Junction ,4 
+ZNA,Zamania ,2 
+DHA,Dheena ,2 
+SLD,Sakaldiha ,2 
+KCA,Kuchman ,2 
+KEI,Kashi ,3 
+SOP,Shivpur ,3 
+BRPT,Birapatti ,2 
+BTP,Babatpur ,2 
+PDRD,Pindra Road ,2 
+KSF,Khalispur ,2 
+TLMD,Trilochan Mahadeo ,2 
+JLL,JalalGanj ,2 
+SIQ,Sarkoni ,2 
+ZBD,Zafarabad Junction ,4 
+JOP,Jaunpur City ,3 
+SKN,Sri Krishna Nagar ,2 
+HRPG,HarpalGanj ,1 
+KEPR,Koiripur ,1 
+LBA,Lambhua ,1 
+SHNG,Shivnagar ,2 
+MFKA,Musafir Khana ,2 
+NHH,Nihalgarh ,3 
+AKJ,AkbarGanj ,1 
+HGH,Haidergarh ,2 
+CDRL,Chhandrauli ,2 
+AMG,Alamnagar ,3 
+SAN,Sandila ,3 
+BLM,Balamau Junction ,4 
+AJI,Anjhi Shahabad ,2 
+TLH,Tilhar ,2 
+PMR,Pitambarpur ,3 
+CH,Chandausi Junction ,3 
+DPR,Dhampur ,1 
+JUDW,Jagadhri Workshop ,2 
+UBC,Ambala City ,3 
+RPJ,Rajpura Junction ,3 
+SIR,Sirhind Junction ,3 
+GVG,Mandi Gobindgarh ,2 
+KNN,Khanna ,3 
+CHA,Chawapail ,2 
+DOA,Doraha ,2 
+SNL,Sanehwal ,3 
+DDL,Dhandari Kalan ,3 
+LDW,Ladhowal ,2 
+PHR,Phillaur Junction ,3 
+GRY,Goraya ,2 
+PGW,Phagwara Junction ,3 
+CEU,Chiheru ,2 
+KRE,Kartarpur ,2 
+NDLS,New Delhi ,16 
+SNP,Sonipat ,5 
+PNP,Panipat Junction ,5 
+KUN,Karnal ,3 
+KKDE,Kurukshetra Junction ,3 
+GTJT,Getor Jagatpura ,2 
+BU,Baswa ,2 
+CKD,Charkhi Dadri ,1 
+BNW,Bhiwani Junction ,3 
+HSR,Hisar Junction ,6 
+SSA,Sirsa ,2 
+TWB,Talwandi ,1 
+MOGA,Moga ,2 
+JGN,Jagraon ,2 
+JHL,Jakhal Junction ,3 
+DUI,Dhuri Junction ,4 
+DBRT,Dibrugarh Town ,3 
+TSK,Tinsukia Junction ,3 
+SLGR,Simaluguri Junction ,3 
+MXN,Mariani Junction ,3 
+FKG,Furkating Junction ,2 
+DMV,Dimapur ,3 
+DPU,Diphu ,2 
+LMG,Lumding Junction ,5 
+HJI,Hojai ,2 
+CPK,Chaparmukh Junction ,3 
+DES,Desari ,2 
+CPR,Chhapra Junction ,5 
+BUI,Ballia ,3 
+GCT,Ghazipur City ,3 
+FD,Faizabad Junction ,5 
+KUE,Kursela ,2 
+THB,Thana Bihpur Junction ,3 
+MNE,Mansi Junction ,4 
+KRBP,Khudiram B Pusa ,2 
+DOL,Dholi ,2 
+HJP,Hajipur Junction ,5 
+SEE,Sonpur Junction ,4 
+CI,Chhapra Kacheri ,3 
+SV,Siwan Junction ,5 
+DEOS,Deoria Sadar ,3 
+BBK,Barabanki Junction ,4 
+ON,Unnao Junction ,5 
+ETW,Etawah Junction ,5 
+FZD,Firozabad ,4 
+HRS,Hathras Junction ,4 
+ALJN,Aligarh Junction ,7 
+DSA,Delhi Shahdara Junction ,4 
+DR,Dadar Central ,8 
+KSRA,Kasara ,4 
+DVL,Devlali ,3 
+CSN,Chalisgaon Junction ,4 
+PC,Pachora Junction ,4 
+SAV,Savda ,2 
+NB,Nimbhora ,2 
+RV,Raver ,3 
