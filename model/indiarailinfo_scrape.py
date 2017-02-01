@@ -1,4 +1,5 @@
 # http://indiarailinfo.com/arrivals/9495
+# outdated
 
 from bs4 import BeautifulSoup,  NavigableString
 import urllib2

@@ -1,38 +1,46 @@
 """
-Wikipedia Indian Railway stations
+Objective :
+Get Number of platforms given a station 
 """
 from bs4 import BeautifulSoup
 import urllib2
+import re
+import csv
 
-site = 'https://en.wikipedia.org/wiki/List_of_railway_stations_in_India'
+def search(query) :
+	q = urllib2.quote(query,safe='')
+	url = 'http://www.bing.com/search?q='+q
+	req = urllib2.Request(url)
+	req.add_header('User-Agent', 'Mozilla/5.0') 
+	response = urllib2.urlopen(req)
+	page = response.read()
+	# print page
+	return BeautifulSoup(page)
 
-page = urllib2.urlopen(site).read()
-soup = BeautifulSoup(page)
+# page = urllib2.urlopen(site).read()
+# soup = BeautifulSoup(page)
+# print soup.prettify()
+
+# soup = search('indiarailinfo arrivals '+'SINGARAM')
+# print soup.findAll('a', href=re.compile('^http://indiarailinfo.com/arrivals/'))[0]['href']
 
 
-codes = []
+arrival_regex = re.compile('^http://indiarailinfo.com/arrivals/')
 
-for table in soup.find_all('table') :
-	for tr in table.find_all('tr')[1:] :
-		tds = tr.find_all('td')
-		platform = 'null'
-		if (tds != None) :
-			a = tds[0].find_all('a')
-			if (a != None) :
-				try :
-					a = a[0]
-					if a.has_attr('class') and a['class'][0] == 'new':
-						pass
-					else :
-						platform = get_platform('https://en.wikipedia.org'+a['href'])
-				except IndexError :
-					pass
+with open('stations.csv', 'rb') as f:
+		reader = csv.reader(f)
+		flag = False
+		for row in reader:
+			soup = search('indiarailinfo arrivals '+row[1])
 			try :
-				if (len(tds[1].text)) :
-					codes.append(tds[1].text)
-			except IndexError :
-				pass
+				station_code = re.compile('-'+row[0].lower().split(' ')[0])
+				links = map(lambda x: x['href'],soup.findAll('a', href=arrival_regex))
+				link = 'NULL'
+				for e in links :
+					if station_code.search(e) :
+						link = e
 
+			except :
+				link = 'NULL'
 
-for code in codes :
-	print code
+			print row[0],' , ', row[1],' , ', link
