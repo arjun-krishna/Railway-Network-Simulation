@@ -27,16 +27,16 @@ with open('isl_wise_train_detail_03082015_v1.csv') as f:
     reader = csv.reader(f)
     for row in reader:
         try :
-          trains[row[0]]['route'].append(row[3])
-          trains[row[0]]['distance'].append(row[7])
-          trains[row[0]]['arrival'].append(row[5])
-          trains[row[0]]['departure'].append(row[6])
+          trains[row[0]+row[1]]['route'].append(row[3])
+          trains[row[0]+row[1]]['distance'].append(row[7])
+          trains[row[0]+row[1]]['arrival'].append(row[5])
+          trains[row[0]+row[1]]['departure'].append(row[6])
         except Exception : 
-          trains[row[0]] = {'train_id': row[0],'name':row[1],'src':row[8],'dst':row[10],'route' : [],'distance':[],'arrival':[],'departure':[]}
-          trains[row[0]]['route'].append(row[3])
-          trains[row[0]]['distance'].append(row[7])
-          trains[row[0]]['arrival'].append(row[5])
-          trains[row[0]]['departure'].append(row[6])
+          trains[row[0]+row[1]] = {'train_id': row[0],'name':row[1],'src':row[8],'dst':row[10],'route' : [],'distance':[],'arrival':[],'departure':[]}
+          trains[row[0]+row[1]]['route'].append(row[3])
+          trains[row[0]+row[1]]['distance'].append(row[7])
+          trains[row[0]+row[1]]['arrival'].append(row[5])
+          trains[row[0]+row[1]]['departure'].append(row[6])
 
         
 L = []

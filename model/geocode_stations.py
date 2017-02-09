@@ -1,7 +1,8 @@
 import googlemaps
 from datetime import datetime
+import keys
 
-gmaps = googlemaps.Client(key='AIzaSyCyNhGhbKpgCvxE-isEtksti__YqKDqOF8')
+gmaps = googlemaps.Client(key=keys.geoCodeKey)
 def get_geocode_station(station_name):
 	# Geocoding an address
 	geocode_result = gmaps.geocode(station_name)[0]
