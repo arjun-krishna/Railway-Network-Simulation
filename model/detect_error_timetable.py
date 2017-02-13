@@ -24,7 +24,8 @@ import json
 
 trains = {}
 error = set()
-with open('train_data.csv') as f:
+total_trains = set()
+with open('isl_wise_train_detail_03082015_v1.csv') as f:
     reader = csv.reader(f)
     for row in reader:
         try :
@@ -32,12 +33,13 @@ with open('train_data.csv') as f:
           error.add(row[0])
         except Exception : 
           trains[row[0]+row[1]] = {row[2]:0}
-        
+          total_trains.add(row[0]+row[1])
 
 for train_no in error :
   print train_no
 
 print len(error)
+print len(total_trains)
 
 """
 '12488'
