@@ -36,7 +36,7 @@
 
 
 var width = 880,
-    height = 700;
+		height = 700;
 
 // set projection
 var projection = d3.geo.mercator();
@@ -114,16 +114,14 @@ d3.json("../../data/india.json", function(error, topo) {
 
 		// plot the edges
 		svg.selectAll("line")
-		.data(edgeL).enter()
-		.append('line')
-		.style('stroke', 'black')
-		.style('stroke-width','2px')
-    .attr('x1', function(edge) { return edge[0][0] })
-    .attr('y1', function(edge) { return edge[0][1] })
-    .attr('x2', function(edge) { return edge[1][0] })
-    .attr('y2', function(edge) { return edge[1][1] });
-
-    
+			.data(edgeL).enter()
+			.append('line')
+			.style('stroke', 'black')
+			.style('stroke-width','2px')
+			.attr('x1', function(edge) { return edge[0][0] })
+			.attr('y1', function(edge) { return edge[0][1] })
+			.attr('x2', function(edge) { return edge[1][0] })
+			.attr('y2', function(edge) { return edge[1][1] });
 
 });
 

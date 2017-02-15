@@ -1,9 +1,9 @@
 Usage :
 
-trains_object.py
+trains_objects.py
 -----------------
 ```
-./train_object.py > ../data/trains_data.json
+./train_objects.py > ../data/trains_data.json
 
 ```
 
@@ -11,6 +11,12 @@ rail_network.py
 ----------------
 ```
 ./rail_network.py > ../data/network_edgL
+```
+
+station_location.py
+--------------------
+```
+./station_location.py > ../data/station_location.json
 ```
 
 Visualization of network

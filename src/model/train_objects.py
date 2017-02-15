@@ -39,7 +39,11 @@ error = set()
 total_trains = set()
 with open('../data/isl_wise_train_detail_03082015_v1.csv') as f:
     reader = csv.reader(f)
+    isHeader = True
     for row in reader:
+        if isHeader :
+          isHeader = False
+          continue
         try :
           x = trains[row[0]+row[1]][row[2]] 
           error.add(row[0]+row[1])
@@ -55,7 +59,11 @@ sys.stderr.write("# trains : "+str(len(total_trains))+"\n")
 trains = {}
 with open('../data/isl_wise_train_detail_03082015_v1.csv') as f:
     reader = csv.reader(f)
+    isHeader = True
     for row in reader:
+        if isHeader :
+          isHeader = False
+          continue
         if (row[0]+row[1]) in error :   # skip processing error detected trains in data
           continue
         try :
