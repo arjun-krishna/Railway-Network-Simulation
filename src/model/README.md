@@ -21,4 +21,4 @@ and run this
 python -m simpleHTTPServer 8000
 ```
 
-View ###localhost:8000/model/visualization
+View http://localhost:8000/model/visualization
