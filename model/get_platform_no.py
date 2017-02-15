@@ -38,5 +38,5 @@ def get_platformnum_from_ir(station_name):
 			else :
 				return {'error' : 'no platform number in html'}
 
-string = raw_input('enter name \n')
-get_platformnum_from_ir(string)
+# string = raw_input('enter name \n')
+# get_platformnum_from_ir(string)

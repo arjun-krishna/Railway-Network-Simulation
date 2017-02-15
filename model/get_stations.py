@@ -13,4 +13,4 @@ with open('isl_wise_train_detail_03082015_v1.csv') as f:
         S.add((row[3],row[4]))
 
 for elem in S :
-	print elem[0], " , ",elem[1]
+	print elem[0],",",elem[1]
