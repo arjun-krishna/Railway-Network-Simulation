@@ -61,9 +61,43 @@ transform_coordinates = function(projection,place) {
 	return projection(place.reverse());
 }
 
+function loadJSON(file,callback) {   
+  var xobj = new XMLHttpRequest();
+      xobj.overrideMimeType("application/json");
+      xobj.open('GET', file, true); 
+      
+      xobj.onreadystatechange = function () {
+        if (xobj.readyState == 4 && xobj.status == "200") {
+          callback(JSON.parse(xobj.responseText));
+        }
+  };
+  xobj.send(null);  
+}
+
+function loadCSV(file,callback) {
+  var xobj = new XMLHttpRequest();
+      // xobj.overrideMimeType("application/json");
+      xobj.open('GET', file, true); 
+      
+      xobj.onreadystatechange = function () {
+        if (xobj.readyState == 4 && xobj.status == "200") {
+        	var L = xobj.responseText.split("\n");
+        	for ( i=0;i<L.length;i++ ) {
+        		L[i] = L[i].split(", ");
+        	}
+          callback(L);
+        }
+  };
+  xobj.send(null);  	
+}
+
+
+// station_location map
+var station_location;
+
+
 d3.json("../../data/india.json", function(error, topo) { 
 
-		console.log(topo);
 		states = topojson.feature(topo, topo.objects.india).features
 		
 		// set projection parameters
@@ -76,53 +110,112 @@ d3.json("../../data/india.json", function(error, topo) {
 						.attr("width", width)
 						.attr("height", height);
 
+		
+		loadJSON('../../data/station_location.json',function(response) {
+			station_location = response;	
 
-		ban = [12.9783,77.5684];
-		ban_coord = transform_coordinates(projection,ban);
+			loadCSV("../../data/stations.csv",function(res) { // clean csv reading needed!
+				stations = res;
+				
+				stations = stations.map( (station) => {
+					station = station.toString();
+					station = station.replace(/\s/g,"");
+					return station;
+				});
 
-		del = [28.6609677,77.2276704];
-		del_coord = transform_coordinates(projection,del);
+				stations.splice(-1,1)
+				console.log("Station JSON : ",Object.keys(station_location).length)
+				console.log("No. of Stations : ",stations.length)
 
-		// add states from topojson
-		svg.selectAll("path")
-			.data(states).enter()
-			.append("path")
-			.attr("class", "feature")
-			.style("fill", "steelblue")
-			.attr("d", path);
+				loadCSV("../../data/network_edgL",function(r) {
 
-		// put boarder around states 
-		svg.append("path")
-			.datum(topojson.mesh(topo, topo.objects.india, function(a, b) { return a !== b; }))
-			.attr("class", "mesh")
-			.attr("d", path);
+					network_edgL = r;
+
+					stations_coord = stations.map( (station) => {
+							 
+							coord = station_location[station];
+							L =  [coord["lat"],coord["lng"]];
+							return L;
+					});
+
+					// console.log(stations_coord);
+
+					network_edgL.splice(-1,1);
+					console.log("No. of Edges : ",network_edgL.length)
+
+					edgeList = network_edgL.map((edge) => {
+						
+						edge[0] = edge[0].toString();
+						edge[0] = edge[0].replace(/\s/g,"");
+						edge[1] = edge[1].toString();
+						edge[1] = edge[1].replace(/\s/g,"");
+						L = [0,0]
+						coord = station_location[edge[0]];
+						C = [coord["lat"],coord["lng"]];
+						L[0] = transform_coordinates(projection,C)
+
+						coord = station_location[edge[1]];
+						C = [coord["lat"],coord["lng"]];
+						L[1] = transform_coordinates(projection,C)
+
+						return L;
+					});
 
 
-		// plot co-ordinates
-		svg.selectAll("circle")
-			.data([ban_coord,del_coord]).enter()
-			.append("circle")
-			.attr("cx", function (d) { return d[0]; })
-			.attr("cy", function (d) { return d[1]; })
-			.attr("r", "2px")
-			.attr("fill", "red")
+					ban = [12.9783,77.5684];
+					ban_coord = transform_coordinates(projection,ban);
 
-		// edgeList contains array of edges
-		// each edge has a vertice which is a co-ordinate 
+					del = [28.6609677,77.2276704];
+					del_coord = transform_coordinates(projection,del);
 
-		edgeL = [[ban_coord,del_coord]]
+					// add states from topojson
+					svg.selectAll("path")
+						.data(states).enter()
+						.append("path")
+						.attr("class", "feature")
+						.style("fill", "steelblue")
+						.attr("d", path);
 
-		// plot the edges
-		svg.selectAll("line")
-			.data(edgeL).enter()
-			.append('line')
-			.style('stroke', 'black')
-			.style('stroke-width','2px')
-			.attr('x1', function(edge) { return edge[0][0] })
-			.attr('y1', function(edge) { return edge[0][1] })
-			.attr('x2', function(edge) { return edge[1][0] })
-			.attr('y2', function(edge) { return edge[1][1] });
+					// put boarder around states 
+					svg.append("path")
+						.datum(topojson.mesh(topo, topo.objects.india, function(a, b) { return a !== b; }))
+						.attr("class", "mesh")
+						.attr("d", path);
 
+
+					stations_coord = stations_coord.map((coord) => {
+						return transform_coordinates(projection,coord);
+					})
+
+
+					// plot co-ordinates
+					svg.selectAll("circle")
+						.data(stations_coord).enter()
+						.append("circle")
+						.attr("cx", function (d) { return d[0]; })
+						.attr("cy", function (d) { return d[1]; })
+						.attr("r", "0.2px")
+						.attr("fill", "red")
+
+					// edgeList contains array of edges
+					// each edge has a vertice which is a co-ordinate 
+
+					edgeL = [[ban_coord,del_coord]]
+					// edgeL = edgeList
+					// plot the edges
+					svg.selectAll("line")
+						.data(edgeL).enter()
+						.append('line')
+						.style('stroke', 'black')
+						.style('stroke-width','2px')
+						.attr('x1', function(edge) { return edge[0][0] })
+						.attr('y1', function(edge) { return edge[0][1] })
+						.attr('x2', function(edge) { return edge[1][0] })
+						.attr('y2', function(edge) { return edge[1][1] });
+
+				});
+			});
+		});
 });
 
 </script>

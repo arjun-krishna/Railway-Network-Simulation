@@ -13,6 +13,12 @@ rail_network.py
 ./rail_network.py > ../data/network_edgL
 ```
 
+stations.py
+------------
+```
+./stations.py > ../data/stations.csv
+```
+
 station_location.py
 --------------------
 ```
