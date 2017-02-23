@@ -194,20 +194,20 @@ d3.json("../../data/india.json", function(error, topo) {
 						.append("circle")
 						.attr("cx", function (d) { return d[0]; })
 						.attr("cy", function (d) { return d[1]; })
-						.attr("r", "0.2px")
+						.attr("r", "1px")
 						.attr("fill", "red")
 
 					// edgeList contains array of edges
 					// each edge has a vertice which is a co-ordinate 
 
 					edgeL = [[ban_coord,del_coord]]
-					// edgeL = edgeList
+					edgeL = edgeList
 					// plot the edges
 					svg.selectAll("line")
 						.data(edgeL).enter()
 						.append('line')
 						.style('stroke', 'black')
-						.style('stroke-width','2px')
+						.style('stroke-width','0.1px')
 						.attr('x1', function(edge) { return edge[0][0] })
 						.attr('y1', function(edge) { return edge[0][1] })
 						.attr('x2', function(edge) { return edge[1][0] })

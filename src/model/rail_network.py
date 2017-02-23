@@ -13,6 +13,9 @@ output : edge list of the network.
 
 import json
 
+def clean_up(string) :
+    return string.replace(" ", "")
+
 edges = set()
 
 with open('../data/trains_data.json') as json_data:
@@ -21,7 +24,7 @@ with open('../data/trains_data.json') as json_data:
 
     for train in trains :
       for i in xrange(len(train["route"])-1) :
-        edge = (train["route"][i],train["route"][i+1])
+        edge = (clean_up(train["route"][i]),clean_up(train["route"][i+1]))
         edges.add(edge)
     edges = list(edges)
     edges.sort()

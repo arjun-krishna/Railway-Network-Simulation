@@ -12,13 +12,17 @@ output : List of station codes
 
 import csv 
 
+def clean_up(string) :
+    return string.replace(" ", "")
+
+
 stations = set()
 
 with open('../data/network_edgL') as f:
     reader = csv.reader(f)
     for row in reader:
-      stations.add(row[0])
-      stations.add(row[1])
+      stations.add(clean_up(row[0]))
+      stations.add(clean_up(row[1]))
 
 stations = list(stations)
 stations.sort()
